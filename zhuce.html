@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>注册</title>
+    <link href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top container-fluid navbar-fixed-top navbar-inverse" style="margin-bottom:0;">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="shouye.html" class="navbar-brand" target="_blank">首页</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="qianduanzixun.html" target="_blank">前端资讯</a></li>
+                    <li><a href="kechengxuanze.html" target="_blank">课程选择</a></li>
+                    <li><a href="toupiao.html" target="_blank">投票</a></li>
+                    <li><a href="sousuo.html" target="_blank">搜索</a></li>
+                    <li><a href="zhuce.html" target="_blank">注册</a></li>
+                    <li><a href="yonghudenglu.html" target="_blank">登陆</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="neirong.html" target="_blank">关于我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="container " style="margin-top:51px; ">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- 小点 -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        </ol>
+
+        <!-- 图片 -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="6.jpg" alt="环保" width="100%">
+            </div>
+            <div class="item">
+                <img src="7.jpg" alt="环保" width="100%">
+            </div>
+        </div>
+
+        <!-- 左右的标签 -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+<div class="container" >
+    <ol class="breadcrumb">
+        <li><a href="#">首页</a></li>
+        <li class="active">注册</li>
+    </ol>
+</div>
+<div class="container">
+    <table class="table" >
+        <thead>
+        <th style="font-size:30px;font-weight: normal;">用户登录</th>
+        </thead>
+        <tbody>
+        <td style="padding-right: 0;">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="box" class="col-md-2 control-label">用户名</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="box" placeholder="用户名">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="box1" class="col-md-2 control-label">密码</label>
+                    <div class="col-md-10">
+                        <input type="password" class="form-control" id="box1" placeholder="输入密码">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="box2" class="col-md-2 control-label">Email</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="box2" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="box3" class="col-md-2 control-label">手机号</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="box3" placeholder="输入手机号">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="dropdown"><!--向下弹出对话框-->
+                        <label for="box4" class="col-md-2 control-label">地区</label>
+                        <div class="col-md-10" >
+                            <button id = "box4" class="btn btn-default dropdown-toggle form-control" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                请选择省份                    <!--类似开关模式-->
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="#">北京</a></li>
+                                <li><a href="#">河北</a></li>
+                                <li><a href="#">河南</a></li>
+                                <li><a href="#">山东</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-2 control-label">性别</label>
+                    <div class="col-md-10">
+                        <label class="radio-inline">
+                            <input type="radio" value="" name="sex"> 男
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" value="" name="sex"> 女
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">爱好</label>
+                    <div class="col-md-10" style="padding-top:7px;">
+                        <div class="checkbox"  style="padding-top:0px;">
+                            <label class="checkbox-inline" style="padding-top:0px;">
+                                <input type="checkbox" >
+                                音乐
+                            </label>
+                            <label class="checkbox-inline" style="padding-top:0px;">
+                                <input type="checkbox" >
+                                旅游
+                            </label>
+                            <label class="checkbox-inline" style="padding-top:0px;">
+                                <input type="checkbox" >
+                                登山
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="checkbox col-md-10 col-md-offset-2" >
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="">
+                            阅读并接受
+                        </label>
+                        <a href="#"  class="checkbox-inline" data-toggle="modal" data-target="#myModal" style="text-decoration: none;outline: none;margin-left:0;padding-left: 0px;">《用户协议》 </a>
+                        <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">用户协议</h4>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        北京中公教育科技股份有限公司，是国内民办教育知名品牌“中公教育”的主要实体，中国民办教育协会培训教育专业委员会副理事长单位。在中国职业教育领域具有较强的影响力，先后被搜狐、新浪等权威媒体评为 “最具社会影响力教育企业” 、“最具综合实力教育企业”。
+                                        中公教育总部位于北京，直营分部覆盖国内众多城市，在全国31个省市自治区，近350个地市，拥有470家直营分部和旗舰学习中心，全国专用教学场地超过30万平米。
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="col-md-10 col-md-offset-2" style="padding-left: 0px;">
+                <input type="button" class="btn btn-success" value="注册">
+                <input type="reset" class="btn btn-default" value="重置">
+                <button class="btn" style="background: red;color: #fff;">已有账号，去登录</button>
+            </div>
+
+        </td>
+        </tbody>
+    </table>
+
+</div>
+<div class="container" >
+    <div style="margin-bottom: 0px;" class="panel panel-default">
+        <div class="panel-footer">copyright1999-2016 北京中公教育科技股份有限公司 All Reserved 京ICP证161188号</div>
+    </div>
+</div>
+
+
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+
+<script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js" ></script>
+
+</body>
+</html>
